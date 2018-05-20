@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 50
+
+zuul:
+  routes:
+    api-a.path: /api-a-url/**
+    api-a.serviceId: eureka-provider
+    api-b.path: /api-b/**
+    api-b.serviceId: ribbon-consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:45/eureka
