@@ -6,7 +6,7 @@ server:
 
 zuul:
   routes:
-    api-a.path: /api-a-url/**
+    api-a.path: /api-a/**
     api-a.serviceId: eureka-provider
     api-b.path: /api-b/**
     api-b.serviceId: ribbon-consumer
