@@ -10,6 +10,7 @@ zuul:
     api-a.serviceId: eureka-provider
     api-b.path: /api-b/**
     api-b.serviceId: ribbon-consumer
+  ignored-patterns: /**/hello/** # 设置对应路径不被路由
 
 eureka:
   client:

@@ -11,8 +11,16 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class FilterConfiguration {
 
+
+    /**
+     * token 拦截器
+     * */
     @Bean
     public TokenFilter tokenFilter() {
         return new TokenFilter();
     }
+
+    /**
+     * 路由器
+     * */
 }
